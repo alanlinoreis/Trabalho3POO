@@ -1,2 +1,24 @@
-# Trabalho3POO
-Trabalho 3 da disciplina de Programacao orientada a objetos
+# Trabalho 3 - Programação Orientada a Objetos
+
+Este repositório contém o **Trabalho 3** desenvolvido na disciplina de **Programação Orientada a Objetos** da **Universidade Tecnológica Federal do Paraná (UTFPR) - Câmpus Medianeira**.
+
+## 📘 Informações da Disciplina
+- **Curso:** Ciência da Computação  
+- **Disciplina:** Programação Orientada a Objetos  
+- **Professor:** Everton Coimbra  
+
+## 👥 Integrantes do Grupo
+- Alan Lino dos Reis  
+- Bruno Luis da Cruz  
+- Hilário Canci Neto  
+- Pedro Gabriel Sepulveda Borgheti  
+- Pedro Lucas Reis  
+
+## 🚀 Sobre o Trabalho
+O Trabalho 3 tem como objetivo aplicar aprofundar decisões de design orientado a objetos.  
+
+>Criar uma classe.
+
+---
+
+✍️ Desenvolvido como parte das atividades acadêmicas da disciplina de Programação Orientada a Objetos do curso de Ciência da Computação da UTFPR - Medianeira.
