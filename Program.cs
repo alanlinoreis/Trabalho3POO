@@ -80,10 +80,51 @@ namespace Trabalho3POO
             else
                 throw new ArgumentException("Estado civil invalido");
         }
+        public Pessoa(string nome, char sexo, int idade, string cpf, char estadocivil)
+        {
+            if (!string.IsNullOrWhiteSpace(nome))
+                this.nome = nome;
+            else
+                throw new ArgumentException("O nome não pode ser vazio.");
 
+            sexo = char.ToUpper(sexo);
+            if (sexo != '\0' && (sexo == 'M' || sexo == 'F'))
+            {
+                this.sexo = sexo;
+            }
+            else
+                throw new ArgumentException("Sexo invalido");
+
+            if (idade >= 0 && idade <= 130)
+                this.idade = idade;
+            else
+                throw new ArgumentException("Idade invalida");
+
+            if (!string.IsNullOrWhiteSpace(cpf))
+            {
+                if (Int64.TryParse(cpf, out Int64 result) == true)
+                    this.cpf = cpf;
+                else
+                    throw new ArgumentException("CPF invalido (deve contar apenas números)");
+            }
+            else
+                throw new ArgumentException("CPF invalido (deve contar apenas números)");
+
+            estadocivil = char.ToUpper(estadocivil);
+            if (estadocivil != '\0' && (estadocivil == 'S' || estadocivil == 'C'))
+            {
+                this.estadocivil = estadocivil;
+            }
+            else
+                throw new ArgumentException("Estado civil invalido");
+        }
         public Pessoa(string nome, char sexo)
         {
-            this.nome = nome;
+            if (!string.IsNullOrWhiteSpace(nome))
+                this.nome = nome;
+            else
+                throw new ArgumentException("O nome não pode ser vazio.");
+
             sexo = char.ToUpper(sexo);
             if (sexo != '\0' && (sexo == 'M' || sexo == 'F'))
             {
@@ -93,6 +134,19 @@ namespace Trabalho3POO
                 throw new ArgumentException("Sexo invalido");
 
             this.idade = 0;
+        }
+        public Pessoa(string nome, char sexo, int idade)
+        {
+            if (!string.IsNullOrWhiteSpace(nome))
+                this.nome = nome;
+            else
+                throw new ArgumentException("O nome não pode ser vazio.");
+
+            sexo = char.ToUpper(sexo);
+            if (sexo != '\0' && (sexo == 'M' || sexo == 'F'))
+            {
+                this.sexo = sexo;
+            }
         }
     }
 
