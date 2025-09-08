@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Tracing;
 
 namespace Trabalho3POO
 {
@@ -118,35 +119,11 @@ namespace Trabalho3POO
             else
                 throw new ArgumentException("Estado civil invalido");
         }
-        public Pessoa(string nome, char sexo)
+        public Pessoa(string nome, char sexo) : this(nome, sexo, 0, "00000000000", 's')
         {
-            if (!string.IsNullOrWhiteSpace(nome))
-                this.nome = nome;
-            else
-                throw new ArgumentException("O nome não pode ser vazio.");
-
-            sexo = char.ToUpper(sexo);
-            if (sexo != '\0' && (sexo == 'M' || sexo == 'F'))
-            {
-                this.sexo = sexo;
-            }
-            else
-                throw new ArgumentException("Sexo invalido");
-
-            this.idade = 0;
         }
-        public Pessoa(string nome, char sexo, int idade)
+        public Pessoa(string nome, char sexo, int idade) : this(nome, sexo, idade, "00000000000", 's')
         {
-            if (!string.IsNullOrWhiteSpace(nome))
-                this.nome = nome;
-            else
-                throw new ArgumentException("O nome não pode ser vazio.");
-
-            sexo = char.ToUpper(sexo);
-            if (sexo != '\0' && (sexo == 'M' || sexo == 'F'))
-            {
-                this.sexo = sexo;
-            }
         }
     }
 
