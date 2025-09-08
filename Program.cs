@@ -65,7 +65,7 @@ namespace Trabalho3POO
             else
                 throw new ArgumentException("Sexo invalido");
         }
-        public char estadocivil;
+        private char estadocivil;
         public char Getestadocivil()
         {
             return this.estadocivil;
