@@ -17,7 +17,7 @@ Este repositório contém o **Trabalho 3** desenvolvido na disciplina de **Progr
 ## 🚀 Sobre o Trabalho
 O Trabalho 3 tem como objetivo aplicar aprofundar decisões de design orientado a objetos.  
 
->Criar uma classe.
+>Criar e desenvolver as funcionalidades básicas, fazendo o devido tratamento de erros, propondo melhorias e reflexões sobre o aprendizado.
 
 ---
 
